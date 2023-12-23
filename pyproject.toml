@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry-demo"
+name = "test_github_actions"
 version = "0.1.0"
 description = ""
 authors = ["AbrahamPapp <pabris97@gmail.com>"]
