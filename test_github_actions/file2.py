@@ -3,4 +3,4 @@
 
 def valami():
     """Function docstring"""
-    print("valami")
+    print('    valami')

@@ -1,14 +1,15 @@
 repos:
-  - repo: local
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
     hooks:
-    -   id: black
-        name: black
-        entry: black
-        language: system
-        types: [python]
-    -   id: pylint
-        name: pylint
-        entry: pylint
-        language: system
-        types: [python]
-        require_serial: true
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: check-merge-conflict
+    -   id: check-ast
+    -   id: double-quote-string-fixer
+    -   id: debug-statements
+    -   id: check-toml
+    -   id: check-json
+    -   id: check-xml
