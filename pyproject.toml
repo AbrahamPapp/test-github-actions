@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test_github_actions"
-version = "0.1.0"
+version = "0.1.2"
 description = ""
 authors = ["AbrahamPapp <pabris97@gmail.com>"]
 readme = "README.md"
@@ -8,16 +8,19 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 matplotlib = "*"
-black = "^23.12.1"
-pylint = "^3.0.3"
-
 
 [tool.poetry.group.dev.dependencies]
 poetry-githooks = "^3.0.0"
+black = "^23.12.1"
+pylint = "^3.0.3"
+setuptools = "^69.0.3"
+tox = "^4.11.4"
+pytest = "^7.4.3"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.githooks]
-pre-commit = "black ."
+
+
+
